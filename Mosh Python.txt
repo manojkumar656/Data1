@@ -1,0 +1,537 @@
+print ("Mosh Homedani")
+print ("Manoj is THE MAN")
+print ('0----')
+print (' !!!!')
+print ('*' * 10)
+
+
+price = 10
+rating = 4.9
+name = 'Mosh'
+is_published = False
+print (price)
+
+name = input('What is your name?')
+color = input('What is your favourite color?')
+print(name + ' likes ' + color)
+
+full_name = 'John Smith'
+age = 20
+is_new = True
+
+birth_year = input('Birth year: ')
+
+print(type(birth_year))
+
+age = 2019-int(birth_year)
+print(type(age))
+print(age)
+
+weight_lbs = int(input('Weights in Lbs:'))
+weight_kg = weight_lbs * .45
+print(weight_kg)
+
+String Variables-
+
+course = "python's course for Beginners"
+course = 'Python for Beginners'
+print(course[-1]) --> s
+print(course[1]) --> 'P'
+print(course[0:3])
+print(course[1:])
+print(course[:])
+print(course[1:-1])
+
+course = '''
+Hi John,
+Here is our first email to you.
+
+Thanks you,
+The support Team
+'''
+
+first = 'John'
+last = 'Smith'
+message = first + ' [' + last + '] is a coder'
+
+msg = f'{first} [{last}] is a Coder'
+
+print(message)
+print(msg)
+
+course='Python for Beginners'
+
+print(len(course))
+print(course.upper())
+print(course.lower())
+print(course.find('P'))
+print(course.find('o'))
+print(course.find('Beginners'))
+print(course.replace('Beginners','Absolute Beginners'))
+print(course.title())
+
+print(course)
+
+print('Python' in course)
+
+print(10+3)
+print(10-3)
+print(10/3)
+print(10//3)
+print(10*3)
+# For Remainder
+print(10%3)
+print(10**3)
+
+x = 10
+x = x +3
+#(Augmented Assignment Numbers)
+x +=3
+x -=3
+print(x)
+
+y = 10
+y -= 3
+print(y)
+
+x = (10 + 3) * 2 ** 2
+print(x)
+
+x = (2+3) * 10-3
+print(x)
+
+#parenthesis
+#exponentiation 2**
+#multiplication or division
+#addition or substraction
+
+
+x = 2.9
+print(round(x))
+
+print(abs(-2.9))
+
+
+import math
+#Used to use math module and function by using (math.{function})
+
+print(math.ceil(2.9))
+print(math.floor(2.9))
+
+
+
+#If Condition
+is_hot = False
+is_cold = True
+
+if is_hot:
+    print("It's a hot day")
+    print("Drink plenty of water")
+elif is_cold:
+    print("It's a cold day")
+    print("Wear warm clothes")
+else:
+    print("It's a lovely day")
+
+print("Enjoy your day")
+
+price = 1000000
+has_good_credit = True
+
+if has_good_credit:
+    down_payment = .1 * price
+else:
+    down_payment = .2 * price
+print(f"Down Payment : {down_payment}")
+
+#Logical Operators
+#If applicant has high income AND good credit
+#Eligible for Loan
+
+has_high_income = True
+has_good_credit = False
+criminal_record = False
+
+#if has_high_income or has_good_credit:
+if has_high_income and not criminal_record:
+    print("Eligible for Loan")
+
+#AND : both
+#OR: at least one
+#NOT
+
+temperature = 30
+
+if temperature != 30:
+    print("It's hot day")
+else:
+    print("It's not a hot day")
+
+name = "Jfdsafasdfsf afdasfd sadfsadf asdfa"
+
+if len(name) < 3:
+    print("Name must be atleast 3 characters")
+elif len(name) > 50:
+    print('Name must be a maximum of 50 characters')
+else:
+    print('Name looks good')
+
+weight = int(input('Weight: '))
+category = input('(L)bs or (K)g:')
+
+if category == 'K':
+    print(f'You are {weight*0.45} Kilo')
+elif category =='L':
+    print(f'You are {weight/0.45} pounds')
+else:
+    print('Choose atleast one Kilos or Pounds')
+
+#Car Example
+#Car
+
+i = 1
+while i <= 5:
+    print('*'*i)
+    i = i+1
+print('Done')
+
+secret_number = 9
+
+i = 1
+while i <=3:
+    guess = int(input('Enter Secret Number: '))
+    i = i + 1
+    if guess == secret_number:
+        print("you Win")
+        break
+else:
+    print("Your limit has exceeded")
+
+
+command = ""
+started = False
+
+while command.lower() != "quit":
+    command = input("> ").lower()
+    if command == "start":
+        if started:
+            print("Car is already started")
+        else:
+            started = True
+            print("Car started")
+    elif command == "stop":
+        if not started:
+            print("Car is already stopped!")
+        else:
+            started = False
+            print("Car stopped.")
+    elif command == "help":
+        print("""
+start - to start the car
+stop - to stop the car
+quit - to quit
+""")
+    elif command == "quit":
+        break
+    else:
+        print("Sorry, I don't understand")
+
+#For Loop
+
+for item in 'Python':
+    print(item)
+
+for item in ['Mosh', 'Josh', 'Dani']:
+    print(item)
+
+for item in range(10):
+    print(item)
+
+for item in range(5,10,2):
+    print(item)
+
+prices = [10,20,30]
+total=0
+
+for price in prices:
+    total += price
+    print(f"Total : {total}")
+
+#Nested Loop
+
+for x in range(4):
+    for y in range(3):
+        print(f"({x},{y})")
+
+numbers = [5,2,5,2,2]
+
+#for x_count in numbers:
+#    print('x' * x_count)
+
+for x_count in numbers:
+    output = ''
+    for count in range(x_count):
+        output += 'x'
+    print(output)
+
+
+# List
+
+names = ['John', 'Bob', 'Mosh', 'Sarah', 'Mosh']
+print(names[2])
+print(names[2:])
+print(names[2:4])
+print(names[1:-1])
+
+
+
+numbers = [3,6,2,4,8,4,10]
+
+max=numbers[0]
+
+for number in numbers:
+    if number > max:
+        max = number
+print(max)
+
+#[
+#    1 2 3
+#    4 5 6
+#    7 8 9
+#]
+matrix = [
+    [1,2,3],
+    [4,5,6],
+    [7,8,9]
+]
+#matrix[0][1] = 20
+#print(matrix[0][1])
+
+for row in matrix:
+    for item in row:
+        print(item)
+
+#List function
+
+numbers =[5,2,1,5,7,4]
+#numbers.append(20) #Add new items in the list
+#numbers.insert(0,10) #with the position
+#numbers.remove(5) #Remove any numbers
+#numbers.clear() # Remove all numbers
+#numbers.pop() #Remove last numbers
+numbers.index(5)
+
+print(numbers.index(5))
+print(50 in numbers)
+print(numbers.count(5)) #Count
+print(numbers.sort())  # Sort
+print(numbers)
+print(numbers.reverse()) # Sort in reverse
+print(numbers)
+
+
+numbers =[5,2,1,5,7,4]
+
+numbers2 = numbers.copy()
+numbers.append(10)
+print(numbers2)
+
+#Remove Duplicate
+numbers = [2,2,4,6,3,4,6,1]
+
+uniques = []
+
+for number in numbers:
+    if number not in uniques:
+        uniques.append(number)
+print(uniques)
+
+numbers = (1,2,3)
+
+numbers[0] =10
+print(numbers[0])
+
+#Unpacking
+
+coordinates = (1,2,3)
+#x = coordinates[0]
+#y = coordinates[1]
+#z=  coordinates[2]
+
+x, y, z = coordinates
+print(y)
+
+#Name : John Smith
+#Email : john@gmail.com
+#Phone : 12345
+
+customer = {
+    "name": "John Smith",
+    "age" : 30,
+    "is_verified" : True
+}
+
+customer["name"] = "Jack Smith"
+customer["birthdate"] = "1 Jan 1980"
+print(customer["name"])
+print(customer.get("birthdate"))
+
+
+Dictionary Example:
+phone = input("Phone: ")
+
+
+digits_mapping = {
+    "1": "One",
+    "2": "Two",
+    "3": "Three",
+    "4": "Four"
+}
+
+output = ""
+for ch  in phone:
+    output += digits_mapping.get(ch, "!" ) + " "
+print(output)
+
+#-----------------
+message = input(">")
+words = message.split(' ')
+print(words)
+
+#Good Morning :)
+emojis  = {
+    ":)": "??",
+    ":(": "??"
+}
+
+output = ""
+for word in words:
+    output += emojis.get(word,word) + " "
+
+print(output)
+#Good Morning :)
+
+#Defined Functions
+def greet_user():
+    print('Hi there!')
+    print('Welcome aboard')
+
+
+print("Start")
+greet_user()
+print("Finish")
+
+#Parameters
+def greet_user(name):
+    name = "John"
+    print(f'Hi {name}!')
+    print('Welcome aboard')
+
+
+print("Start")
+greet_user("John")
+greet_user("Mary")
+print("Finish")
+
+#Multi Dimentional parameters
+def greet_user(first_name, last_name):
+    #first_name = "John"
+    print(f'Hi {first_name} {last_name}!')
+    print('Welcome aboard')
+
+
+print("Start")
+greet_user("John", "Smith")
+greet_user("Mary", "Jonas")
+print("Finish")
+
+#Keyword Parameters
+
+def greet_user(first_name, last_name):
+    #first_name = "John"
+    print(f'Hi {first_name} {last_name}!')
+    print('Welcome aboard')
+
+
+print("Start")
+greet_user(last_name="Smith",first_name="John")
+calc_cost(total=50, shopping=5, discount=0.1)
+print("Finish")
+
+#Positional arguments first then Keyword arguments.
+
+
+def square (number):
+    return number * number
+
+result = square(3)
+print(result)
+
+print(square(3))
+
+#If we don't use return statement
+def square (number):
+    print( number * number)
+
+print(square(3))
+
+#Emoji converter through function
+def emoji_converter(message):
+    words = message.split(' ')
+    print(words)
+
+    emojis = {
+        ":)": "??",
+        ":(": "??"
+    }
+
+    output = ""
+    for word in words:
+        output += emojis.get(word, word) + " "
+    return output
+
+message = input(">")
+result = emoji_converter(message)
+print(result)
+
+#Exceptins or Error Handling
+#exit code 0 success else failed
+
+try:
+    age = int(input('Age: '))
+
+    income = 20000
+    risk = income / age
+    print(age)
+except ZeroDivisionError:
+    print('Age cannot be 0.')
+except ValueError:
+    print("Invalid Value")
+
+
+  #Classes in Python
+
+#Numbers
+#Strings
+#Booleans
+#----
+#Lists
+#Dictionaries
+
+class Point:
+    def move(self):
+        print("move")
+
+    def draw(self):
+        print("draw")
+
+point1 = Point()
+point1.x = 10
+point1.y = 20
+print(point1.x)
+
+point2 = Point()
+point2.x=1
+point2.y=100
+
+print(point2.y)
